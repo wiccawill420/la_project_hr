@@ -12,6 +12,11 @@ setup(
     author_email='wiccawill420@gmail.com',
     install_requires=[],
     packages=find_packages('src'),
-    package_dir={'': 'src'}
+    package_dir={'': 'src'},
+    entry_points={
+        'console_scripts': 'hr=hr.cli:main',
+    },
 )
+
+
 
